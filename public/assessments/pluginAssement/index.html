@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="assets/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-capitalize text-center mt-3 fs-1">Students List</h2>
+      <div id="grid">
+
+      </div>
+    </div>
+
+    <div class="container-fluid ">
+      <div class="row m-5">
+        <div class="col-lg-6">
+          <div class="row  mt-5" id="row1"></div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="row ">
+            <h3 class="text-capitalize text-center"> view and edit section </h3>
+            <div class="row mt-5 p-5 border secondcol  shadow">
+
+
+
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0 border-0" id="basic-addon1">Name:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Studentname"
+                  id = "strudentname"readonly>
+              </div>
+
+
+
+
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0" id="basic-addon1">ID:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="studentid"
+                  id="studentid" readonly>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0" id="basic-addon1">mark1:</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Mark 1"
+                  id="mark1" readonly>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0" id="basic-addon1">mark2:</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Mark 2"
+                  id = "mark2"readonly>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0" id="basic-addon1">mark3:</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Mark 3 "
+                  id = "mark3"readonly>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0" id="basic-addon1">mark4:</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Mark 4"
+                id = "mark4" readonly>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text border-0" id="basic-addon1">mark5:</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Mark 5 "
+                id = "mark5"  readonly>
+              </div>
+              <div class="col-lg-2"></div>
+              <button type="button" class="btn btn-primary col-lg-4 m-2 p-3" id="editbtn">Edit</button>
+              <button type="button" class="btn btn-success col-lg-4 m-2" id="savebtn">Save</button>
+              <div class="col-lg-2"></div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row ">
+        <div class="row col-lg-5 m-2 ">
+          <div class="input-group mb-3 shadow p-3 ">
+            <input type="text" class="form-control" placeholder="Enter Student Name " id="data-input">
+            <span class="input-group-text border-0" id="data-inpu">Enter name properly </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/pluginFile.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+  </body>
+</html>

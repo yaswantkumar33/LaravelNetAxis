@@ -1,0 +1,102 @@
+/* nav styling */
+.navmain {
+  background-color: hsl(210.86deg 28% 24.51%);
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: hsl(187.5deg 90.72% 38.04%);
+  font-size: 30px;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 20px;
+  padding: 1rem;
+}
+/* about styling */
+img {
+  border: 5px solid black;
+
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.cusborder {
+  border-bottom: 1px dotted white;
+  margin-bottom: 10px;
+  margin-right: 20px !important;
+  width: 80%;
+}
+
+.cusborder2 {
+  border-top: 1px solid white;
+}
+
+.customcolor {
+  color: #fff;
+}
+/* about me styling */
+.aboutme {
+  background-color: hsl(188.28deg 87% 39.22%);
+}
+
+.aboutme h1 {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.aboutme {
+  color: #fff;
+}
+/* rigth details in about */
+.details {
+  /* padding-top: 50px; */
+  /* padding: 50px 10px; */
+  margin-top: 7%;
+}
+.details-items {
+  text-transform: capitalize;
+}
+
+.details-items {
+  padding-top: 10px;
+}
+
+/* professional styling */
+.workexp {
+  background-color: hsl(184deg 6.17% 52.35%);
+}
+
+.workexp h1,
+h4,
+h6,
+p {
+  color: #fff;
+  text-transform: capitalize;
+}
+/* contact styling */
+
+.contact {
+  background-color: hsl(168.61deg 74.86% 35.88%);
+}
+
+.contact h1,
+p {
+  color: #fff;
+}
+
+/* footer copy writes styling */
+.footer {
+  background-color: hsl(210.86deg 28% 24.51%);
+  height: 60px;
+}
+
+.footerBG {
+  background-color: hsl(168.61deg 74.86% 35.88%);
+}
+
+.btn {
+    background-color: hsl(210.86deg 28% 24.51%);
+    color: #fff;
+}

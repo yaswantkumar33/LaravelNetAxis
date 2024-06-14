@@ -1,0 +1,109 @@
+<!-- name from the user name  -->
+<h1 class="text-capitalize text-center shadow p-4">
+    sucessfull signed in MR.{{name}}
+</h1>
+<!-- main container  -->
+<div class="container-fluid mt-4">
+    <!-- main row  -->
+    <div class="row p-4">
+        <!-- produxt list div got from the json file  -->
+        <div class="col-lg-4 mx-2">
+            <!-- search bar input here uisng th eng-model -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control"
+                    placeholder="Enter Product Name"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" ng-model="search">
+                <span class="input-group-text" id="basic-addon2">search
+                    items here </span>
+            </div>
+            <!-- main product list items  -->
+            <h2 class="text-capitalize text-center py-3">purchase your items
+                here
+            </h2>
+            <div class="row">
+                <div class="col-lg-12" id="productsshow">
+                    <!-- using ng-repeat we loop the card from the jsondata -->
+                    <div class="card col-lg-12"
+                        ng-repeat="x in jsondata | filter:search">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- here for img sorurce we use the img file in the json data  -->
+                                    <img src="{{x.imgsrc}}" class="card-img-top"
+                                        alt="...">
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- getting the below values from the json file called records where we store it in the jsondata name  -->
+                                    <h5>{{x.productname}}</h5>
+                                    <p>{{x.productprice}}</p>
+                                    <p class="card-text">{{x.productdescription}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <!-- add to cart btn with click function addtocart(x.productidnum) here the product num is id of the each items in the json  -->
+                            <button class="btn btn-primary px-4 me-5"
+                                ng-click="addtocart(x.productidnum)">add to cart</button>
+                            <!-- buy now btn for buy the current item with number of 1 item of t he respective item  -->
+                            <button class="btn btn-primary px-4 ms-5">buynow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cart section  -->
+        <div class="col-lg-4 mx-2">
+            <!-- cart heading -->
+            <h1 class="text-capitalize text-center mt-4">user cart</h1>
+
+            <!-- main div for card ng-repeat in cart   -->
+            <div class="col-lg-12 p-4 row" id="cartdiv">
+
+                <!-- using the ng-repeat we loop the items in the cartdata here  -->
+                <div class="card col-lg-12" ng-repeat="x in cartdata">
+                    <!-- mian card body  -->
+                    <div class="card-body" id="maincardb">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- card img  -->
+                                <img src="{{x.imgsrc}}" class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <!-- item deatiles  -->
+                            <div class="col-lg-6">
+                                <h5>{{x.productname}}</h5>
+                                <p id="productprice">{{x.productprice}}</p>
+                                <p class="card-text">{{x.productdescription}}</p>
+                                <input type="number" class="form-control"
+                                    id="cardinval" value="1">
+                            </div>
+                        </div>
+                        <!-- btn for comfirm order and remove the item  -->
+                        <div>
+                            <button class="btn btn-success"
+                                ng-click="countval($index,$event)">confirm your
+                                purchase</button>
+                            <button class="btn btn-dark"
+                                ng-click="deleteitem($index,$event)">remove item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- user details part here  -->
+        <div class="col-lg-3 p-2">
+            <!-- user deatils heading  -->
+            <h1 class="text-capitalize text-center">user deatiles</h1>
+
+
+            <div class="col-lg-12 border-0 p-3 shadow">
+                <h3 class="text-capitalize text-center">username :{{uname}}</h3>
+                <h6 class="text-capitalize text-center">userdob :{{udob }}</h6>
+                <h3 class="text-capitalize text-center">Totalprice :{{tprice}}</h3>
+            </div>
+        </div>
+
+    </div>
+</div>

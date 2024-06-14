@@ -1,0 +1,17 @@
+img{
+    height: 100px;
+    /* width: 100px; */
+}
+.showlist{
+    height: 500px;
+    overflow: auto;
+}
+#cartdiv{
+    padding: 20px;
+    height: 200px !important;
+    overflow: auto;
+    text-align: left;
+}
+.hide{
+    display: none;
+}

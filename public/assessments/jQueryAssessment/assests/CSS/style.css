@@ -1,0 +1,25 @@
+.hide{
+    display: none;
+}
+.gocartbtn{
+    border: none;
+    color: black;
+    text-transform: capitalize;
+
+    background-color: moccasin;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.show{
+    display: block;
+}
+.paybtn{
+    border: none;
+    color: black;
+    text-transform: capitalize;
+    background-color: moccasin;
+    padding: 10px;
+    border-radius: 5px;
+}

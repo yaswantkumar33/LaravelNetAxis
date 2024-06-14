@@ -1,0 +1,20 @@
+#productsshow{
+    height: 700px;
+    overflow: auto;
+}
+span{
+    font-size: 0.8rem;
+    color: red;
+}
+.cusbtn{
+    background-color: antiquewhite !important;
+    color: black !important;
+
+}
+.btn p{
+    font-size: 1rem;
+}
+#cartdiv{
+    height: 700px;
+    overflow: auto;
+}

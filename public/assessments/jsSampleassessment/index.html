@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sampleassessment</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="assestr/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assestr/css/style.css">
+
+</head>
+<body>
+
+
+    <div class="container-fluid">
+
+        <div class="row p-5">
+            <div class="col-lg-6">
+                <div class="row my-4">
+                    <button class="col-lg-2 btn btn-primary" id="generatebtn">Generate</button> <span
+                        class="col-lg-10 text-capitalize text-center p-3" id="displaybg">generatedcolor</span>
+                </div>
+                <hr>
+                <div class="row border p-5 ">
+                    <div class="row text-center">
+                        <div class="row border">
+                            <div class="TOPbtn">
+                                <button class="btn  btn-success"  id="addfirst">ADD</button>
+                                <button class="btn  btn-primary" id="removefirst">REMOVE</button>
+                                <ul class="list-group py-4 border my-3" id="main-ul">
+    
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <div class="row border p-3">
+                            <div class="bottombtn">
+                                <button class="btn btn-success " id="addtwo">ADD</button>
+                                <button class="btn btn-primary" id="removetwo">remove</button>
+                            </div>
+                        </div>
+                        <div class="row p-3 border">
+                            <div class="sortbtn">
+                                <button class="btn btn-danger" id="redsort">Red sort</button>
+                                <button class="btn btn-success" id="greensort">Green sort</button>
+                                <button class="btn btn-primary" id="bluesort">Blue sort</button>
+                            </div>
+                        </div>
+                        <hr class="mt-4">
+                        <div class="row ">
+                            <div class="copybtn justify-content-lg-start p-4">
+                                <button class="btn btn-success" id="cpybtn">copy</button>
+                                <label for="invalue">Start</label>
+                                <input type="number" id="invalue1">
+                                <label for="outvalue">End</label>
+                                <input type="number" name="" id="invalue2">
+                            </div>
+                        </div>
+                        <hr class="mt-4">
+                        <div class="row ">
+                            <div class="copybtn justify-content-lg-start p-4">
+                                <button class="btn btn-success" id="movebtn">Move</button>
+                                <label for="invalue3" id="startmvalue">Start</label>
+                                <input type="number" id="invalue3">
+                                <label for="invalue4" id="endmvalue">End</label>
+                                <input type="number" name="" id="invalue4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-6">
+                <div class="row mt-4 p-5" >
+                    <div class="secondlist mt-5 p-5">
+                        <ul id="secondlist" class="">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
+
+
+    <script src="assestr/script/bootstrap.bundle.min.js"></script>
+    <script src="assestr/script/app.js"></script>
+</body>
+</html>
+

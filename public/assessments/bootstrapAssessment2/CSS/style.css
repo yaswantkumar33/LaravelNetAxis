@@ -1,0 +1,80 @@
+ @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+
+
+ * {
+     font-family: 'Belanosima', sans-serif;
+ }
+
+ nav li a {
+     font-size: 25px !important;
+ }
+
+ nav li a:hover {
+     border-top: 2px solid #a6cd38;
+     color: #a6cd38 !important;
+     font-size: 30px !important;
+
+ }
+
+
+
+
+ .head-main {
+     background-image: linear-gradient(#a6cd38, white, white, #a6cd38);
+     font-family: 'Belanosima', sans-serif;
+
+ }
+
+ .head-main input {
+     border-radius: 1rem;
+ }
+
+ .head-main h2 {
+     font-size: 4.7rem !important;
+ }
+
+ .head-main p {
+     font-size: 1.5rem !important;
+ }
+
+ .head-main .img-icon {
+     position: relative;
+     top: -15%;
+     left: -10%;
+
+     color: white !important;
+
+ }
+
+
+ /* body */
+
+ .cussha {
+     box-shadow: 0 0.5rem 5px #ABB2B9;
+     border-radius: 10px;
+ }
+
+ .cussha:hover {
+     box-shadow: 0 0.5rem 3rem #a6cd38;
+     border-radius: 10px;
+     padding: 10px;
+ }
+
+
+
+ .card {
+     border: none;
+ }
+
+
+ .footer-main {
+     background-color: #2e2e2e;
+     color: white;
+
+
+ }
+
+ .footer-main i {
+     color: #a6cd38 !important;
+ }

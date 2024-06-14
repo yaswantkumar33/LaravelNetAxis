@@ -1,0 +1,48 @@
+<h1 class="text-center text-capitalize">{{name}} and pass is {{pass}}</h1>
+
+<div class="container">
+    <div class="row text-center">
+        <span class="text-danger " ng-show="maxclickalert">max amount of click
+            over</span>
+        <div>
+            <div class="input-group mb-3">
+
+                <input type="text" class="form-control"
+                    placeholder="Your random color is here "
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" ng-model="randomcolor"
+                    id="inval">
+                <span class="input-group-text" id="basic-addon2"
+                    ng-click="rcolor()"><button class="btn">click to random rgb</button></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container border p-3">
+    <div class="row">
+        <h2>show preview <button class="btn " ng-click="pclcik()">click here to
+                see preview</button> </h2>
+        <div class="row" ng-show=true>
+            <div class="box col-lg-6 border shadow m-2"
+                ng-repeat="x in usercolor" ng-style="{'background-color' : x}"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="userlist">
+            <h3 class="text-capitalize text-center">Other users</h3>
+            <div class="list-group" ng-repeat="x in data">
+                <div class="list-group-item">
+                    <h5>name:{{x.name}}</h5>
+                    <button class="btn btn-primary px-3"
+                        ng-click="pclickfrd($index)">add to friend</button>
+                </div>
+
+            </div>
+            <div class="row" ng-show=true>
+                <div class="box col-lg-6 border shadow m-2"
+                    ng-repeat="x in frndpreview"
+                    ng-style="{'background-color' : x}"></div>
+            </div>
+        </div>
+    </div>
+</div>

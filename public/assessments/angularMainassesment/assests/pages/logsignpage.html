@@ -1,0 +1,77 @@
+<!-- login and sign - up buttons  -->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-6"><button
+                        class="btn  btn-secondary col-lg-12 mb-2" ng-click="loginclick()"><span class="cusfont text-capitalize display-5">log-in</span></button></div>
+                <div class="col-lg-6"><button
+                        class="btn btn-secondary col-lg-12" ng-click="signinclick()"><span class="cusfont text-capitalize display-5">sign-up</span> </button></div>
+            </div>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</div>
+
+
+<!-- log in section  -->
+<div class="row " ng-show="login">
+    <div class="col-lg-4"></div>
+    <div class="row col-lg-4 mt-3 shadow p-5">
+        <!-- loginform  -->
+        <form ng-submit="loginpageclick()">
+            <h2 class="text-capitalize text-center mb-2 display-5">log-in
+                page
+            </h2>
+            <span class="text-danger" id="export-filename-error"
+                ng-show="errorme">
+                <p class="text-center text-capitalize ">wrong
+                    username or password </p>
+            </span>
+            <label for="username" class="my-1  p-2"><h4 class="text-capitalize">user name:</h4></label>
+            <input type="text" ng-model="logusername"
+                class="form-control p-2" name="username" required>
+            <label for="userpassword" class="my-1 p-2"><h4 class="text-capitalize">user password:</h4></label>
+            <input type="password" ng-model="loguserpass"
+                class="form-control p-2" name="pass" required>
+            <button
+                class="btn btn-dark border shadow my-3 border-0 p-2 col-lg-12"
+                type="submit"><h4>log-in</h4></button>
+        </form>
+        <!-- sign up page redirection section  -->
+        <p class="text-capitalize">don't have a account click <span class="text-primary"> sign-up</span></p>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+<!-- sign-up section  -->
+<div class="row " ng-show="signin">
+    <div class="col-lg-4"></div>
+    <div class="row col-lg-4 mt-3 shadow p-5">
+        <!-- sign-up form   -->
+        <form ng-submit="signuppageclick()">
+            <h2 class="text-capitalize text-center mb-2 display-5">sign-up
+            </h2>
+            <span class="text-danger" id="export-filename-error"
+                ng-show="errorme">
+                <p class="text-center text-capitalize ">wrong
+                    username or password </p>
+            </span>
+            <label for="username" class="my-1  p-2"><h4 class="text-capitalize">user name:</h4></label>
+            <input type="text" ng-model="signusername"
+                class="form-control p-2" name="username" required>
+            <label for="userpassword" class="my-1 p-2"><h4 class="text-capitalize">user email:</h4></label>
+            <input type="email" ng-model="signuseremail"
+                class="form-control p-2" name="pass" required>
+            <label for="userpassword" class="my-1 p-2"><h4 class="text-capitalize">user password:</h4></label>
+            <input type="password" ng-model="signuserpass"
+                class="form-control p-2" name="pass" required>
+            <button
+                class="btn btn-dark border shadow my-3 border-0 p-2 col-lg-12"
+                type="submit"><h4>sign-in</h4></button>
+        </form>
+        <!-- sign up page redirection section  -->
+        <p class="text-capitalize">click sign in after creating the account</p>
+    </div>
+    <div class="col-lg-4"></div>
+</div>

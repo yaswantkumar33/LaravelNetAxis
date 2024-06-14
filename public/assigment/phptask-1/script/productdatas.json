@@ -1,0 +1,59 @@
+{
+    "datas": [
+        {
+            "productname": "product1",
+            "productid": 1,
+            "productprice": 20000,
+            "productimg": "./images/pic1.jpg"
+        },
+        {
+            "productname": "product2",
+            "productid": 2,
+            "productprice": 22000,
+            "productimg": "./images/pic2.jpg"
+        },
+        {
+            "productname": "product3",
+            "productid": 3,
+            "productprice": 8000,
+            "productimg": "./images/pic3.jpg"
+        },
+        {
+            "productname": "product4",
+            "productid": 4,
+            "productprice": 12000,
+            "productimg": "./images/pic4.jpg"
+        },
+        {
+            "productname": "product5",
+            "productid": 5,
+            "productprice": 4000,
+            "productimg": "./images/pic5.jpg"
+        },
+        {
+            "productname": "product6",
+            "productid": 6,
+            "productprice": 33000,
+            "productimg": "./images/pic6.jpg"
+        },
+        {
+            "productname": "product7",
+            "productid": 7,
+            "productprice": 4000,
+            "productimg": "./images/pic7.jpg"
+        },
+        {
+            "productname": "product8",
+            "productid": 8,
+            "productprice": 8000,
+            "productimg": "./images/pic8.jpg"
+        },
+        {
+            "productname": "product8",
+            "productid": 9,
+            "productprice": 8000,
+            "productimg": "./images/pic9.jpg"
+        }
+    ]
+}
+

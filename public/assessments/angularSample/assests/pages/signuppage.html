@@ -1,0 +1,40 @@
+<div class="conatainer logincontainer">
+
+    <!-- main row  -->
+    <div class="row ">
+        <div class="col-lg-2 "></div>
+        <div class="col-lg-8 ">
+            <div class="row ">
+                <div class="col-lg-4"></div>
+                <div class="row col-lg-4 mt-3 shadow p-5">
+                    <!-- sign up form  -->
+                    <form ng-submit="sigupclick()">
+                        <h2 class="text-capitalize text-center display-5">sign-up
+                            page
+                        </h2>
+
+                        <label for="username" class="my-1  p-2"><h4>username</h4></label>
+                        <input type="text" ng-model="username"
+                            class="form-control p-2" name="username" required>
+                        <label for="userpassword" class="my-1 p-2"><h4>user-UPI</h4></label>
+                        <input type="text" class="form-control"
+                            ng-model="upi_num" readonly >
+                        <span class="input-group-text text-center"
+                            ng-click="genupi()">Generate-UPI</span>
+                        <label for="username" class="my-1  p-2"><h4>user acc.no</h4></label>
+                        <input type="number" ng-model="useraccnum"
+                            class="form-control p-2" name="username" required> 
+                        <button
+                            class="btn btn-dark border shadow my-3 border-0 p-2 col-lg-12"
+                            type="submit"><h4 class="text-capitalize">sign-up</h4></button>
+                    </form>
+                    <!-- redirection to the login page  -->
+                    <p class="text-capitalize">if you already have a account<a
+                            href="#!">click me</a></p>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>

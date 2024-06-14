@@ -1,0 +1,43 @@
+img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50% !important;
+}
+
+.hide{
+	display: none;
+}
+
+.input-group-text{
+	background: none !important;
+	
+}
+.inputborder{
+	border: 1px solid red !important;
+
+}
+.outborder{
+	border: 1px solid grey !important;
+}
+
+.card:hover{
+	 /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	 background-color: antiquewhite;
+
+}
+
+
+.secondcol:hover{
+	 box-shadow: 10px 10px 50px 0 antiquewhite !important;
+	/* box-shadow: 5px 5px 5px red !important; */
+}
+#savebtn{
+	background-color: #33cc33 !important;
+	border: none;
+	font-size: 1rem;
+}
+#editbtn{
+	border: none;
+	font-size: 1rem;
+
+}

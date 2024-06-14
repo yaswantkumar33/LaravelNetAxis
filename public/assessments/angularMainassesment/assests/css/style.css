@@ -1,0 +1,15 @@
+.cusfont{
+    font-size: 1.8rem;
+}
+.cuserror{
+    font-size: 0.8rem;
+}
+.cuserror2{
+    font-size: 1.2rem;
+}
+.sucesspage{
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    border-radius: 50px;
+}

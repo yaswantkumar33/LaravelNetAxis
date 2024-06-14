@@ -1,0 +1,37 @@
+
+<div class="conatainer">
+    <div class="row ">
+        <div class="col-lg-2 "></div>
+        <div class="col-lg-8 ">
+            <div class="row ">
+                <div class="col-lg-4"></div>
+                <div class="row col-lg-4 mt-3 shadow p-5">
+
+                    <form ng-submit="logclick()">
+                        <h2 class="text-capitalize text-center">log-in page
+                        </h2>
+                        <span class="text-danger" id="export-filename-error"
+                            ng-show="errorme">
+                            <p class="text-center text-capitalize ">wrong  username or password </p>
+                        </span>
+                        <label for="username" class="my-1  p-2"><h4>username</h4></label>
+                        <input type="text" ng-model="username"
+                            class="form-control p-2" name="username">
+                        <label for="userpassword" class="my-1 p-2"><h4>userpassword</h4></label>
+                        <input type="number" ng-model="userpass"
+                            class="form-control p-2" name="pass">
+                        <button
+                            class="btn btn-dark border shadow my-3 border-0 p-2"
+                            type="submit"><h4>log-in</h4></button>
+                    </form>
+                    <p class="text-capitalize">don't have a acoount want to
+                        sign up <a href="#!second">click me</a></p>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>

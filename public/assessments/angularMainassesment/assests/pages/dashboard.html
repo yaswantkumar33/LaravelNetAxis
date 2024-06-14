@@ -1,0 +1,126 @@
+<!-- show anmd brevage btn section  -->
+<div class="container">
+    <h5 class="display-5 ms-5">welcome mr.{{name}}</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-6"><button
+                            class="btn btn-dark text-captilize col-lg-12 mb-2" ng-click="moveshow()">show</button></div>
+                    <div class="col-lg-6"><button
+                            class="btn btn-dark text-captilize col-lg-12" ng-click="bevshow()">bevarage</button></div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-1"><button class="btn btn-secondary col-lg-12" ng-click="logout()">logout</button></div>
+        </div>
+    </div>
+</div>
+
+<!-- movie show section  -->
+<div class="container-fluid">
+    <div class="row " ng-show="movidata">
+        <div class="col-lg-2"></div>
+        <div class="row col-lg-8 mt-3 shadow p-3">
+            <table cellpadding="15px">
+                <thead class="shadow">
+                    <tr>
+                        <td class="text-capitalize text-center "> <h2>movies</h2></td>
+                        <td class="text-capitalize text-center "> <h2>time</h2></td>
+                        <td class="text-capitalize text-center "> <h2>avliable
+                                tickets</h2>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="x in movdata">
+                        <td class="text-capitalize text-center"><h5><button  class="btn btn-secondary col-lg-12 text-capitalize" ng-click="movnameclick(x.movid)">{{x.movname}}</button></h5></td>
+                        <td class=" text-center"><h5>{{x.movtime}}</h5></td>
+                        <td class=" text-center"><h5>{{x.ticketavl}}</h5></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+</div>
+<!-- breveage  section  -->
+<div class="container-fluid">
+    <div class="row " ng-show="brev">
+        <div class="col-lg-2"></div>
+        <div class="row col-lg-8 mt-3 shadow p-3">
+            
+                <table cellpadding="15px">
+                    <thead class="shadow">
+                        <tr>
+                            <td class="text-capitalize text-center "> <h2>items</h2></td>
+                            <td class="text-capitalize text-center "> <h2>rate</h2></td>
+                            <td class="text-capitalize text-center "> <h2>quanitity</h2></td>
+                            <td class="text-capitalize text-center "> <h2>totalprice</h2></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in bevdata">
+                            <td class="text-capitalize text-center"><h5>{{x.name}}</h5></td>
+                            <td class=" text-center"><h5>{{x.price}}</h5></td>
+                            <td class=" text-center">
+                                <input type="number" class="form-control"
+                                    ng-model="x.quantity" ng-change="stprice()">
+                            </td>
+                            <td class=" text-center"><h5>{{x.price * x.quantity}}</h5></td>
+                        </tr>
+                    </tbody>
+                </table>           
+            <p class="display-6">total cost :{{overallprice}}</p>
+            <div class="col-lg-10"></div>
+            <div class="col-lg-2">
+                <button class="btn btn-secondary col-lg-12" ng-click="moveshow()">select</button>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+        
+    </div>
+
+</div>
+<!-- total area  -->
+<div class="container-fluid">
+    <div class="row " ng-show="costpart">
+        <div class="col-lg-2"></div>
+        <div class="row col-lg-8 mt-3 shadow p-3">
+           <h4 class="text-center text-capitalize text-secondary"> select number of tickets for  <span class="text-capitalize text-dark">{{movename}}</span></h4>
+<span ng-show="limiterror" class="text-danger text-center display-6 my-3 cuserror2"><h5>execds the avliable tickets</h5> <span class="cuserror"><h6>reduce the num of ticket</h6></span></span>
+
+
+           <table>
+            <thead>
+                <tr class="text-capitalize text-center">
+                    <td>ticket price</td>
+                    <td>number of ticket</td>
+                    <td></td>
+                    <td>cost of tickets</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in bookeddata">
+                    <td class="text-capitalize text-center">{{x.ticketprice}}({{x.movname}})</td>
+                    
+                    <td class="text-capitalize text-center"> 
+                        <input type="number" class="form-control col-lg-5"
+                        ng-model="x.numoftic" ng-change="cprice(x.numoftic,x.movid)"></td>
+                        
+                        <td class="text-capitalize text-center">{{x.ticketprice * x.numoftic}}</td>
+                </tr>
+            </tbody>
+           </table>
+          <h4 class="text-capitalize text-center mt-5">ticket amount:{{cmprice}}</h4>
+          <h5 class="text-capitalize text-center my-1">brevage amount:{{overallprice}}</h5>
+          <h6 class="text-capitalize text-center my-1">totat expenditure {{cmprice + overallprice}}</h6>
+          <div class="col-lg-5"></div>
+          <div class="col-lg-2 my-3"><button class="btn btn-dark col-lg-12" ng-click="payclick()">pay now </button></div>
+          <div class="col-lg-5"></div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+*{
+    list-style: none;
+}
+h3{
+    font-size: 2rem;
+    color: #939393;
+}
+.taskrow{
+    border: 4px solid #939393;
+    padding: 5px;
+}
+.completedtask{
+    border: 4px solid #939393;
+    padding: 5px;
+}
+.oldtask{
+    border: 4px solid #939393;
+    padding: 5px;
+}
+.progressrow{
+    border: 4px solid #939393;
+
+}
+
+li{
+    margin-top: 10px;
+}

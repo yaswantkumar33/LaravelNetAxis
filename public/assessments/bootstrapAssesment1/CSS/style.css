@@ -1,0 +1,138 @@
+:root {
+  --primary: #07aca0;
+  --white: #fafafa;
+  --grey: #2d3032;
+}
+
+/* nav styling */
+nav i {
+  color: var(--primary);
+}
+nav {
+  text-transform: capitalize;
+}
+.active {
+  color: var(--primary);
+}
+nav ul li a:hover {
+  color: var(--primary) !important;
+  border-top: 2px solid var(--primary);
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* home styling */
+section .homecontainer {
+  background-image: url(assests/home1.jpg);
+  object-fit: cover;
+}
+.boxe {
+  margin: 80px;
+  box-shadow: 0 0.5rem 1rem var(--primary);
+}
+
+.boxe h3 {
+  text-transform: capitalize;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.boxe p {
+  color: var(--white);
+}
+
+.box1 {
+  padding: 40px;
+  background-color: var(--primary);
+  opacity: 100%;
+  color: var(--white);
+}
+.box2 {
+  padding: 40px;
+  background-color: var(--primary);
+  opacity: 90%;
+  color: var(--white);
+}
+.box3 {
+  padding: 40px;
+  background-color: var(--primary);
+  opacity: 8 0%;
+  color: var(--white);
+}
+
+.box1 i {
+  font-size: 55px;
+  border-radius: 50%;
+}
+.box2 i {
+  font-size: 55px;
+}
+.box3 i {
+  font-size: 55px;
+}
+/* card */
+.planning span {
+  color: var(--primary);
+}
+
+.undesginli {
+  list-style-type: none;
+}
+/* planning */
+.planning .card {
+  box-shadow: -8px 6px 1rem 10px lightgrey;
+}
+.planning {
+  background-color: var(--white);
+  box-shadow: 0 0.5rem 1rem var(--primary);
+}
+.planning h1 span {
+  color: var(--primary);
+}
+.cusbg {
+  background-color: var(--primary);
+  color: white;
+}
+/* features */
+.main-features {
+  box-shadow: 0 0.5rem 1rem var(--primary);
+}
+.main-features h1 span {
+  color: var(--primary);
+}
+.features {
+  border: 5px solid grey;
+}
+.btn {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.cardheader {
+  background-color: var(--primary);
+  font-style: italic;
+}
+/* water amrk */
+.watermark .cusb div {
+  border: 2px solid grey;
+}
+.watermark {
+  opacity: 20%;
+}
+
+/* footer section one */
+.footer1 {
+  background-color: var(--grey);
+  color: var(--white);
+}
+.footer1 h6 {
+  color: #727272;
+}
+.footer1 i {
+  color: var(--primary);
+}
+.footer1 span {
+  border: 1px solid var(--grey);
+  background-color: var(--primary);
+  color: var(--white);
+}
+.footer{background-color: #727272;}

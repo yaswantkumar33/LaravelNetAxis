@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="display-3 text-secondary text-center">welcome to the admin page </h1>
+
+
+        <div class="container-fluid">
+
+            <div class="p-5 m-5 shadow">
+                <div class="row">
+                    <div class="card border-2 p-2 mt-4 col-lg-12" ng-repeat="x in usersdata">
+                        
+                        <div class="row">
+                            <div class=" col-lg-7">
+                                <h3>
+                                    name : {{x.name}}
+                                </h3>
+                                <h6>
+                                    userid: {{x.userid}}
+                                </h6>
+                                <h6>
+                                    pass:{{x.pass}}
+                                </h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h5>colors are : </h5>
+                                <div class="row">
+                                    <div class="box  border shadow m-1" ng-repeat = "x in usersdata[x.userid].color" ng-style="{'background-color': x }"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,118 @@
+<!-- logout section  -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10"></div>
+        <div class="col-lg-2">
+            <div class="row p-4 me-5">
+
+                <button class="btn btn-secondary me-5 text-capitalize"
+                    ng-click="logout()"><h5
+                        class="text-capitalize pt-2">log-out</h5></button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- main container  -->
+<div class="container-fluid">
+    <!-- header section  -->
+    <div class="row p-3 mb-3">
+        <h3 class="display-5">welcome mr.{{username}}</h3>
+        <h6 class="display-6 text-secondary">your total balance is:
+            {{userbalance}}</h6>
+    </div>
+
+    <!-- other user section  -->
+    <div class="row p-3 mx-5 border ">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 p-3">
+                    <div class="card  border-0 shadow">
+                        <h5 class="text-capitalize text-center card-header">user
+                            deatils</h5>
+                        <div class="card-body my-4">
+                            <h6 class="mb-2 card-text">username:{{username}}</h6>
+                            <h6 class="mb-2 card-text">userbalance:{{userbalance}}</h6>
+                            <h6 class="mb-2 card-text">user-UPI:{{user_upi}}</h6>
+                            <button class="btn btn-secondary mt-3 col-lg-12 "
+                                ng-click="addnewclick()">view users</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-9  p-3">
+
+                    <div class="row" ng-show="otherusers">
+                        <div class="col-lg-2" ng-repeat="x in datas">
+                            <div class="card border-0 shadow  p-1">
+                                <img src="assests/images/pic.png"
+                                    class="card-img-center ">
+
+                                <div class="card-body bg-secondary text-white">
+                                    <p class="mb-0">Name: {{x.uname}}</p>
+                                    <button class="btn  btn-light mt-1"
+                                        ng-click="addtofrnd(x.userid)">add to
+                                        frnd
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- frnd section  -->
+    <div class="row border mx-5 p-5 mt-3">
+        <h6 class="display-6 text-capitalize text-center">friend list</h6>
+        <div class="row">
+            <div class="col-lg-2 shadow p-3 mx-2" ng-repeat="x in frnarr">
+                <div class="p-2 overflow-auto">
+                    <p class="mb-0">Name: {{x.uname}}</p>
+                    <p class="mb-0"> UserAcc: {{x.useracc}}</p>
+                    <p>userbalance:{{x.ubalance}}</p>
+                    <button class="btn btn-secondary"
+                        ng-click="sendmny(x.userid)">transfer money</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- transaction section  -->
+    <div class="row border mx-5 p-5 mt-2">
+        <div class="container">
+            <h6 class="text-capitalize text-center display-6 my-2">transaction
+                section </h6>
+            <div class="container">
+                <div class="row container shadow p-5">
+                    <form ng-submit="ctclick()">
+
+                        <div class="input-group my-2">
+                            <span class="input-group-text">username:</span>
+                            <input type="text" class="form-control"
+                                placeholder="Username" ng-model="tuser">
+                        </div>
+                        <div class="input-group my-2 ">
+                            <span class="input-group-text">account no:</span>
+                            <input type="text" class="form-control"
+                                placeholder="Username" ng-model="taccno">
+                        </div>
+                        <div class="input-group my-2">
+                            <span class="input-group-text">transfer amount:</span>
+                            <input type="text" class="form-control"
+                                placeholder="amount" ng-model="amo" required>
+                        </div>
+                        <button class="btn btn-secondary mt-3"
+                            type="submit">
+                            complete transaction
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="conatainer logincontainer">
+
+    <!-- main one  -->
+    <div class="row ">
+        <div class="col-lg-2 "></div>
+        <div class="col-lg-8 ">
+
+            <!-- login container row  -->
+            <div class="row ">
+                <div class="col-lg-4"></div>
+                <div class="row col-lg-4 mt-3 shadow p-5">
+                    <!-- loginform  -->
+                    <form ng-submit="logclick()">
+                        <h2 class="text-capitalize text-center mb-2 display-5">log-in
+                            page
+                        </h2>
+                        <span class="text-danger" id="export-filename-error"
+                            ng-show="errorme">
+                            <p class="text-center text-capitalize ">wrong
+                                username or password </p>
+                        </span>
+                        <label for="username" class="my-1  p-2"><h4>username</h4></label>
+                        <input type="text" ng-model="uname"
+                            class="form-control p-2" name="username" required>
+                        <label for="userpassword" class="my-1 p-2"><h4 class>user_UPI</h4></label>
+                        <input type="password" ng-model="u_upi"
+                            class="form-control p-2" name="pass" required>
+                        <button
+                            class="btn btn-dark border shadow my-3 border-0 p-2 col-lg-12"
+                            type="submit"><h4>log-in</h4></button>
+                    </form>
+                    <!-- sign up page redirection section  -->
+                    <p class="text-capitalize">don't have a acoount want to
+                        sign up <a href="#!signup">click me</a></p>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.hide {
+    display: none;
+}
+
+#row1 {
+    margin-left: 55px !important;
+}
+
+.btn {
+    color: red;
+    background-color: antiquewhite;
+    border: none;
+}
+
+.bganimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: black;
+    filter:  saturate(2);
+    overflow: hidden;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: black;
+     /* height: 100px;  */
+    /* height: 50px; */
+    /* width: 100px; */
+}
+
+.colorBox:hover{
+    background: #00bfff;
+    transition-duration: 0s;
+}
+.card{
+    background: transparent;
+    color: white;
+    
+}
+.btn{
+    background-color: #00bfff;
+    color: black;
+}
+
+
+
+
+
+
+
+body {
+    height: 100%;
+    background-image: conic-gradient(#66ccff, #0066ff, #0000cc, #0000cc, #0066ff, #66ccff);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card {
+    padding: 5px;
+}
+
+#maincarddiv {
+    box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+#newuser {
+    background: #0066ff;
+    color: #fff;
+    font-weight: 550;
+    border: none;
+}
